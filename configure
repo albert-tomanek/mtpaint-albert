@@ -12,7 +12,7 @@ MT_LANG=NO
 MT_MAN=NO
 MT_POD=NO
 MT_CPICK=mtpaint
-MT_FPICK=mtpaint
+MT_FPICK=mtpaint	#gtkfilesel
 MT_ANIM=Gifsicle
 ICON_SET=icons1
 

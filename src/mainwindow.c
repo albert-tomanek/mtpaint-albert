@@ -5187,9 +5187,9 @@ static void *main_menu_code[] = {
 	MENUTEAR, //
 	uMENUITEMs("//Convert To RGB", ACTMOD(FILT_2RGB, 0)), // for scripting
 	MENUITEM(_("//Convert To RGB"), ACTMOD(FILT_2RGB, 0)),
-		ACTMAP(NEED_IDX),
+		SHORTCUT(r, CS),
 	MENUITEMs(_("//Convert To Indexed ..."), ACTMOD(DLG_INDEXED, 0)),
-		ACTMAP(NEED_24),
+		SHORTCUT(i, CS),
 	MENUSEP, //
 	MENUITEMs(_("//Scale Canvas ..."), ACTMOD(DLG_SCALE, 0)),
 		SHORTCUT(Page_Up, 0),
@@ -5330,7 +5330,7 @@ static void *main_menu_code[] = {
 	MENUITEMis(_("//Transform Colour ..."), ACTMOD(DLG_BRCOSA, 0), XPM_ICON(brcosa)),
 		SHORTCUT(c, CS), SHORTCUT(Insert, 0),
 	MENUITEMs(_("//Invert"), ACTMOD(FILT_INVERT, 0)),
-		SHORTCUT(i, CS),
+		ACTMAP(NEED_24),
 	MENUITEMs(_("//Greyscale"), ACTMOD(FILT_GREY, 0)),
 		SHORTCUT(g, C),
 	MENUITEMs(_("//Greyscale (Gamma corrected)"), ACTMOD(FILT_GREY, 1)),
